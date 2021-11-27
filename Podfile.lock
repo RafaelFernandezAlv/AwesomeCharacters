@@ -1,0 +1,20 @@
+PODS:
+  - Kingfisher (7.1.1)
+  - SwiftGen (6.5.1)
+
+DEPENDENCIES:
+  - Kingfisher
+  - SwiftGen
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Kingfisher
+    - SwiftGen
+
+SPEC CHECKSUMS:
+  Kingfisher: f738f9c4a3415823b8e2985d10aa2d6a9f37bc4d
+  SwiftGen: a6d22010845f08fe18fbdf3a07a8e380fd22e0ea
+
+PODFILE CHECKSUM: d4a79a1d4518cb2ec13da792d1d9224c970d7251
+
+COCOAPODS: 1.11.2

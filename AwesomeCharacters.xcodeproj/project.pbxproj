@@ -7,23 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		476E58F985EC2A642951F646 /* libPods-AwesomeCharacters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FF02964BCDE3E679535CE2 /* libPods-AwesomeCharacters.a */; };
 		B168304C27528841006BF6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168304B27528841006BF6F2 /* AppDelegate.swift */; };
 		B168304E27528841006BF6F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168304D27528841006BF6F2 /* SceneDelegate.swift */; };
-		B168305027528841006BF6F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168304F27528841006BF6F2 /* ViewController.swift */; };
-		B168305327528841006BF6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B168305127528841006BF6F2 /* Main.storyboard */; };
 		B168305527528843006BF6F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B168305427528843006BF6F2 /* Assets.xcassets */; };
 		B168305827528843006BF6F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B168305627528843006BF6F2 /* LaunchScreen.storyboard */; };
+		B168307127528C87006BF6F2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B168306F27528C87006BF6F2 /* Localizable.strings */; };
+		B168307527528F82006BF6F2 /* Fonts.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168307327528F82006BF6F2 /* Fonts.generated.swift */; };
+		B168307627528F82006BF6F2 /* Assets.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168307427528F82006BF6F2 /* Assets.generated.swift */; };
+		B16830782752905B006BF6F2 /* Strings.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16830772752905B006BF6F2 /* Strings.generated.swift */; };
+		B168308427529080006BF6F2 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B168307A27529080006BF6F2 /* OpenSans-Semibold.ttf */; };
+		B168308527529080006BF6F2 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B168307B27529080006BF6F2 /* OpenSans-Light.ttf */; };
+		B168308627529080006BF6F2 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B168307C27529080006BF6F2 /* OpenSans-Italic.ttf */; };
+		B168308727529080006BF6F2 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B168307D27529080006BF6F2 /* OpenSans-ExtraBold.ttf */; };
+		B168308827529080006BF6F2 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B168307E27529080006BF6F2 /* OpenSans-LightItalic.ttf */; };
+		B168308927529080006BF6F2 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B168307F27529080006BF6F2 /* OpenSans-Bold.ttf */; };
+		B168308A27529080006BF6F2 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B168308027529080006BF6F2 /* OpenSans-SemiboldItalic.ttf */; };
+		B168308B27529080006BF6F2 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B168308127529080006BF6F2 /* OpenSans-ExtraBoldItalic.ttf */; };
+		B168308C27529080006BF6F2 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B168308227529080006BF6F2 /* OpenSans-Regular.ttf */; };
+		B168308D27529080006BF6F2 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B168308327529080006BF6F2 /* OpenSans-BoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D897001F276B104A2BBE57C /* Pods-AwesomeCharacters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeCharacters.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeCharacters/Pods-AwesomeCharacters.debug.xcconfig"; sourceTree = "<group>"; };
+		73FF02964BCDE3E679535CE2 /* libPods-AwesomeCharacters.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeCharacters.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B0E6F24C3EBF443F56C0FE /* Pods-AwesomeCharacters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeCharacters.release.xcconfig"; path = "Target Support Files/Pods-AwesomeCharacters/Pods-AwesomeCharacters.release.xcconfig"; sourceTree = "<group>"; };
 		B168304827528841006BF6F2 /* AwesomeCharacters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeCharacters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B168304B27528841006BF6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B168304D27528841006BF6F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B168304F27528841006BF6F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B168305227528841006BF6F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B168305427528843006BF6F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B168305727528843006BF6F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B168305927528843006BF6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B168307027528C87006BF6F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B168307227528C8D006BF6F2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B168307327528F82006BF6F2 /* Fonts.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.generated.swift; sourceTree = "<group>"; };
+		B168307427528F82006BF6F2 /* Assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.generated.swift; sourceTree = "<group>"; };
+		B16830772752905B006BF6F2 /* Strings.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.generated.swift; sourceTree = "<group>"; };
+		B168307A27529080006BF6F2 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		B168307B27529080006BF6F2 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		B168307C27529080006BF6F2 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		B168307D27529080006BF6F2 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B168307E27529080006BF6F2 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		B168307F27529080006BF6F2 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		B168308027529080006BF6F2 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		B168308127529080006BF6F2 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		B168308227529080006BF6F2 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		B168308327529080006BF6F2 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +60,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				476E58F985EC2A642951F646 /* libPods-AwesomeCharacters.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AEA888FC7A8854B60DE6B7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73FF02964BCDE3E679535CE2 /* libPods-AwesomeCharacters.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B168303F27528841006BF6F2 = {
 			isa = PBXGroup;
 			children = (
 				B168304A27528841006BF6F2 /* AwesomeCharacters */,
 				B168304927528841006BF6F2 /* Products */,
+				E5644E9EF44D510C1A16B488 /* Pods */,
+				3AEA888FC7A8854B60DE6B7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +98,146 @@
 			children = (
 				B168304B27528841006BF6F2 /* AppDelegate.swift */,
 				B168304D27528841006BF6F2 /* SceneDelegate.swift */,
-				B168304F27528841006BF6F2 /* ViewController.swift */,
-				B168305127528841006BF6F2 /* Main.storyboard */,
-				B168305427528843006BF6F2 /* Assets.xcassets */,
-				B168305627528843006BF6F2 /* LaunchScreen.storyboard */,
-				B168305927528843006BF6F2 /* Info.plist */,
+				B1683063275288B6006BF6F2 /* common */,
+				B168306027528895006BF6F2 /* features */,
+				B168305F2752887B006BF6F2 /* configuration */,
 			);
 			path = AwesomeCharacters;
+			sourceTree = "<group>";
+		};
+		B168305F2752887B006BF6F2 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B168305927528843006BF6F2 /* Info.plist */,
+				B168305627528843006BF6F2 /* LaunchScreen.storyboard */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
+		B168306027528895006BF6F2 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				B1683062275288A5006BF6F2 /* detail */,
+				B16830612752889E006BF6F2 /* list */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		B16830612752889E006BF6F2 /* list */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = list;
+			sourceTree = "<group>";
+		};
+		B1683062275288A5006BF6F2 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		B1683063275288B6006BF6F2 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				B168306A27528902006BF6F2 /* resources */,
+				B1683064275288BD006BF6F2 /* model */,
+				B1683068275288D6006BF6F2 /* repository */,
+				B1683069275288DC006BF6F2 /* useCases */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		B1683064275288BD006BF6F2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B1683066275288C9006BF6F2 /* bo */,
+				B1683065275288C3006BF6F2 /* dto */,
+				B1683067275288CE006BF6F2 /* mapper */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B1683065275288C3006BF6F2 /* dto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = dto;
+			sourceTree = "<group>";
+		};
+		B1683066275288C9006BF6F2 /* bo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = bo;
+			sourceTree = "<group>";
+		};
+		B1683067275288CE006BF6F2 /* mapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mapper;
+			sourceTree = "<group>";
+		};
+		B1683068275288D6006BF6F2 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		B1683069275288DC006BF6F2 /* useCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = useCases;
+			sourceTree = "<group>";
+		};
+		B168306A27528902006BF6F2 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				B168305427528843006BF6F2 /* Assets.xcassets */,
+				B168307927529080006BF6F2 /* fonts */,
+				B168306C27528BDE006BF6F2 /* generated */,
+				B168306F27528C87006BF6F2 /* Localizable.strings */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		B168306C27528BDE006BF6F2 /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				B168307427528F82006BF6F2 /* Assets.generated.swift */,
+				B168307327528F82006BF6F2 /* Fonts.generated.swift */,
+				B16830772752905B006BF6F2 /* Strings.generated.swift */,
+			);
+			path = generated;
+			sourceTree = "<group>";
+		};
+		B168307927529080006BF6F2 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B168307A27529080006BF6F2 /* OpenSans-Semibold.ttf */,
+				B168307B27529080006BF6F2 /* OpenSans-Light.ttf */,
+				B168307C27529080006BF6F2 /* OpenSans-Italic.ttf */,
+				B168307D27529080006BF6F2 /* OpenSans-ExtraBold.ttf */,
+				B168307E27529080006BF6F2 /* OpenSans-LightItalic.ttf */,
+				B168307F27529080006BF6F2 /* OpenSans-Bold.ttf */,
+				B168308027529080006BF6F2 /* OpenSans-SemiboldItalic.ttf */,
+				B168308127529080006BF6F2 /* OpenSans-ExtraBoldItalic.ttf */,
+				B168308227529080006BF6F2 /* OpenSans-Regular.ttf */,
+				B168308327529080006BF6F2 /* OpenSans-BoldItalic.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		E5644E9EF44D510C1A16B488 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D897001F276B104A2BBE57C /* Pods-AwesomeCharacters.debug.xcconfig */,
+				94B0E6F24C3EBF443F56C0FE /* Pods-AwesomeCharacters.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +247,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B168305C27528843006BF6F2 /* Build configuration list for PBXNativeTarget "AwesomeCharacters" */;
 			buildPhases = (
+				E266F27A19092F9E392A04FF /* [CP] Check Pods Manifest.lock */,
+				B168306B27528B6B006BF6F2 /* SwiftGen */,
 				B168304427528841006BF6F2 /* Sources */,
 				B168304527528841006BF6F2 /* Frameworks */,
 				B168304627528841006BF6F2 /* Resources */,
@@ -109,6 +284,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = B168303F27528841006BF6F2;
 			productRefGroup = B168304927528841006BF6F2 /* Products */;
@@ -125,42 +301,103 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B168308427529080006BF6F2 /* OpenSans-Semibold.ttf in Resources */,
 				B168305827528843006BF6F2 /* LaunchScreen.storyboard in Resources */,
+				B168308727529080006BF6F2 /* OpenSans-ExtraBold.ttf in Resources */,
+				B168307127528C87006BF6F2 /* Localizable.strings in Resources */,
+				B168308627529080006BF6F2 /* OpenSans-Italic.ttf in Resources */,
+				B168308927529080006BF6F2 /* OpenSans-Bold.ttf in Resources */,
+				B168308A27529080006BF6F2 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				B168308527529080006BF6F2 /* OpenSans-Light.ttf in Resources */,
+				B168308D27529080006BF6F2 /* OpenSans-BoldItalic.ttf in Resources */,
+				B168308827529080006BF6F2 /* OpenSans-LightItalic.ttf in Resources */,
+				B168308B27529080006BF6F2 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				B168308C27529080006BF6F2 /* OpenSans-Regular.ttf in Resources */,
 				B168305527528843006BF6F2 /* Assets.xcassets in Resources */,
-				B168305327528841006BF6F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B168306B27528B6B006BF6F2 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/AwesomeCharacters/common/resources/es.lproj/Localizable.strings",
+				"${SRCROOT}/AwesomeCharacters/common/resources/Assets.xcassets",
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${SRCROOT}/AwesomeCharacters/common/resources/generated/Strings.generated.swift",
+				"${SRCROOT}/AwesomeCharacters/common/resources/generated/Fonts.generated.swift",
+				"${SRCROOT}/AwesomeCharacters/common/resources/generated/Assets.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" run strings --templateName structured-swift5 \"${SRCROOT}/AwesomeCharacters/common/resources/es.lproj/\" --output \"${SRCROOT}/AwesomeCharacters/common/resources/generated/Strings.generated.swift\"\n    \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" run fonts --templateName swift5 \"${SRCROOT}/AwesomeCharacters/common/resources/fonts\" --output \"${SRCROOT}/AwesomeCharacters/common/resources/generated/Fonts.generated.swift\"\n        \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" run xcassets --templateName swift5 \"${SRCROOT}/AwesomeCharacters/common/resources/Assets.xcassets\" --output \"${SRCROOT}/AwesomeCharacters/common/resources/generated/Assets.generated.swift\"\n\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
+		E266F27A19092F9E392A04FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AwesomeCharacters-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B168304427528841006BF6F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B168305027528841006BF6F2 /* ViewController.swift in Sources */,
 				B168304C27528841006BF6F2 /* AppDelegate.swift in Sources */,
+				B168307627528F82006BF6F2 /* Assets.generated.swift in Sources */,
+				B16830782752905B006BF6F2 /* Strings.generated.swift in Sources */,
 				B168304E27528841006BF6F2 /* SceneDelegate.swift in Sources */,
+				B168307527528F82006BF6F2 /* Fonts.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B168305127528841006BF6F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B168305227528841006BF6F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B168305627528843006BF6F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B168305727528843006BF6F2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B168306F27528C87006BF6F2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B168307027528C87006BF6F2 /* en */,
+				B168307227528C8D006BF6F2 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -284,13 +521,14 @@
 		};
 		B168305D27528843006BF6F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D897001F276B104A2BBE57C /* Pods-AwesomeCharacters.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AwesomeCharacters/Info.plist;
+				INFOPLIST_FILE = AwesomeCharacters/configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -311,13 +549,14 @@
 		};
 		B168305E27528843006BF6F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94B0E6F24C3EBF443F56C0FE /* Pods-AwesomeCharacters.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AwesomeCharacters/Info.plist;
+				INFOPLIST_FILE = AwesomeCharacters/configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
