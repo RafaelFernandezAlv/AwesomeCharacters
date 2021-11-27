@@ -28,6 +28,18 @@
 		B168308D27529080006BF6F2 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B168308327529080006BF6F2 /* OpenSans-BoldItalic.ttf */; };
 		B168309027529193006BF6F2 /* ListCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168308E27529193006BF6F2 /* ListCharacterViewController.swift */; };
 		B168309127529193006BF6F2 /* ListCharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B168308F27529193006BF6F2 /* ListCharacterViewController.xib */; };
+		B1683093275293B2006BF6F2 /* ListCharactersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1683092275293B2006BF6F2 /* ListCharactersPresenter.swift */; };
+		B1683095275293CF006BF6F2 /* ListCharacterVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1683094275293CF006BF6F2 /* ListCharacterVO.swift */; };
+		B168309827529AAC006BF6F2 /* UseCaseCharactersGetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168309727529AAC006BF6F2 /* UseCaseCharactersGetList.swift */; };
+		B168309A27529B39006BF6F2 /* CharactersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168309927529B39006BF6F2 /* CharactersRepository.swift */; };
+		B168309C27529C19006BF6F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168309B27529C19006BF6F2 /* Constants.swift */; };
+		B168309E27529FAA006BF6F2 /* Strings+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168309D27529FAA006BF6F2 /* Strings+Extensions.swift */; };
+		B16830A027529FFC006BF6F2 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168309F27529FFC006BF6F2 /* AppError.swift */; };
+		B16830A22752A434006BF6F2 /* ResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16830A12752A434006BF6F2 /* ResponseDTO.swift */; };
+		B16830A42752A4C1006BF6F2 /* CharacterDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16830A32752A4C1006BF6F2 /* CharacterDTO.swift */; };
+		B16830A62752AC63006BF6F2 /* CharacterBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16830A52752AC63006BF6F2 /* CharacterBO.swift */; };
+		B16830A92752ACCB006BF6F2 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16830A82752ACCB006BF6F2 /* APIRequest.swift */; };
+		B16830AB2752AF05006BF6F2 /* CharacterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16830AA2752AF05006BF6F2 /* CharacterMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +69,18 @@
 		B168308327529080006BF6F2 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		B168308E27529193006BF6F2 /* ListCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharacterViewController.swift; sourceTree = "<group>"; };
 		B168308F27529193006BF6F2 /* ListCharacterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCharacterViewController.xib; sourceTree = "<group>"; };
+		B1683092275293B2006BF6F2 /* ListCharactersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharactersPresenter.swift; sourceTree = "<group>"; };
+		B1683094275293CF006BF6F2 /* ListCharacterVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharacterVO.swift; sourceTree = "<group>"; };
+		B168309727529AAC006BF6F2 /* UseCaseCharactersGetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseCharactersGetList.swift; sourceTree = "<group>"; };
+		B168309927529B39006BF6F2 /* CharactersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersRepository.swift; sourceTree = "<group>"; };
+		B168309B27529C19006BF6F2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B168309D27529FAA006BF6F2 /* Strings+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Extensions.swift"; sourceTree = "<group>"; };
+		B168309F27529FFC006BF6F2 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		B16830A12752A434006BF6F2 /* ResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDTO.swift; sourceTree = "<group>"; };
+		B16830A32752A4C1006BF6F2 /* CharacterDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDTO.swift; sourceTree = "<group>"; };
+		B16830A52752AC63006BF6F2 /* CharacterBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBO.swift; sourceTree = "<group>"; };
+		B16830A82752ACCB006BF6F2 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		B16830AA2752AF05006BF6F2 /* CharacterMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +154,10 @@
 		B16830612752889E006BF6F2 /* list */ = {
 			isa = PBXGroup;
 			children = (
+				B1683092275293B2006BF6F2 /* ListCharactersPresenter.swift */,
 				B168308E27529193006BF6F2 /* ListCharacterViewController.swift */,
 				B168308F27529193006BF6F2 /* ListCharacterViewController.xib */,
+				B1683094275293CF006BF6F2 /* ListCharacterVO.swift */,
 			);
 			path = list;
 			sourceTree = "<group>";
@@ -146,6 +172,7 @@
 		B1683063275288B6006BF6F2 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				B16830A72752ACBD006BF6F2 /* others */,
 				B168306A27528902006BF6F2 /* resources */,
 				B1683064275288BD006BF6F2 /* model */,
 				B1683068275288D6006BF6F2 /* repository */,
@@ -167,6 +194,8 @@
 		B1683065275288C3006BF6F2 /* dto */ = {
 			isa = PBXGroup;
 			children = (
+				B16830A12752A434006BF6F2 /* ResponseDTO.swift */,
+				B16830A32752A4C1006BF6F2 /* CharacterDTO.swift */,
 			);
 			path = dto;
 			sourceTree = "<group>";
@@ -174,6 +203,7 @@
 		B1683066275288C9006BF6F2 /* bo */ = {
 			isa = PBXGroup;
 			children = (
+				B16830A52752AC63006BF6F2 /* CharacterBO.swift */,
 			);
 			path = bo;
 			sourceTree = "<group>";
@@ -181,6 +211,7 @@
 		B1683067275288CE006BF6F2 /* mapper */ = {
 			isa = PBXGroup;
 			children = (
+				B16830AA2752AF05006BF6F2 /* CharacterMapper.swift */,
 			);
 			path = mapper;
 			sourceTree = "<group>";
@@ -188,6 +219,7 @@
 		B1683068275288D6006BF6F2 /* repository */ = {
 			isa = PBXGroup;
 			children = (
+				B168309927529B39006BF6F2 /* CharactersRepository.swift */,
 			);
 			path = repository;
 			sourceTree = "<group>";
@@ -195,6 +227,7 @@
 		B1683069275288DC006BF6F2 /* useCases */ = {
 			isa = PBXGroup;
 			children = (
+				B168309727529AAC006BF6F2 /* UseCaseCharactersGetList.swift */,
 			);
 			path = useCases;
 			sourceTree = "<group>";
@@ -235,6 +268,17 @@
 				B168308327529080006BF6F2 /* OpenSans-BoldItalic.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		B16830A72752ACBD006BF6F2 /* others */ = {
+			isa = PBXGroup;
+			children = (
+				B16830A82752ACCB006BF6F2 /* APIRequest.swift */,
+				B168309F27529FFC006BF6F2 /* AppError.swift */,
+				B168309B27529C19006BF6F2 /* Constants.swift */,
+				B168309D27529FAA006BF6F2 /* Strings+Extensions.swift */,
+			);
+			path = others;
 			sourceTree = "<group>";
 		};
 		E5644E9EF44D510C1A16B488 /* Pods */ = {
@@ -293,6 +337,8 @@
 				es,
 			);
 			mainGroup = B168303F27528841006BF6F2;
+			packageReferences = (
+			);
 			productRefGroup = B168304927528841006BF6F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -379,11 +425,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16830A42752A4C1006BF6F2 /* CharacterDTO.swift in Sources */,
+				B168309E27529FAA006BF6F2 /* Strings+Extensions.swift in Sources */,
 				B168304C27528841006BF6F2 /* AppDelegate.swift in Sources */,
+				B168309C27529C19006BF6F2 /* Constants.swift in Sources */,
+				B168309A27529B39006BF6F2 /* CharactersRepository.swift in Sources */,
+				B16830A027529FFC006BF6F2 /* AppError.swift in Sources */,
 				B168307627528F82006BF6F2 /* Assets.generated.swift in Sources */,
 				B168309027529193006BF6F2 /* ListCharacterViewController.swift in Sources */,
 				B16830782752905B006BF6F2 /* Strings.generated.swift in Sources */,
 				B168304E27528841006BF6F2 /* SceneDelegate.swift in Sources */,
+				B16830A62752AC63006BF6F2 /* CharacterBO.swift in Sources */,
+				B1683093275293B2006BF6F2 /* ListCharactersPresenter.swift in Sources */,
+				B16830AB2752AF05006BF6F2 /* CharacterMapper.swift in Sources */,
+				B1683095275293CF006BF6F2 /* ListCharacterVO.swift in Sources */,
+				B168309827529AAC006BF6F2 /* UseCaseCharactersGetList.swift in Sources */,
+				B16830A92752ACCB006BF6F2 /* APIRequest.swift in Sources */,
+				B16830A22752A434006BF6F2 /* ResponseDTO.swift in Sources */,
 				B168307527528F82006BF6F2 /* Fonts.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

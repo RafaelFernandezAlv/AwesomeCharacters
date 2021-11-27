@@ -5,4 +5,5 @@ platform :ios, '15.0'
 target :AwesomeCharacters do
     pod 'SwiftGen'
     pod 'Kingfisher'
+    pod 'NVActivityIndicatorView'
 end
