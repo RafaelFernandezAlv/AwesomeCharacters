@@ -26,6 +26,8 @@
 		B168308B27529080006BF6F2 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B168308127529080006BF6F2 /* OpenSans-ExtraBoldItalic.ttf */; };
 		B168308C27529080006BF6F2 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B168308227529080006BF6F2 /* OpenSans-Regular.ttf */; };
 		B168308D27529080006BF6F2 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B168308327529080006BF6F2 /* OpenSans-BoldItalic.ttf */; };
+		B168309027529193006BF6F2 /* ListCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168308E27529193006BF6F2 /* ListCharacterViewController.swift */; };
+		B168309127529193006BF6F2 /* ListCharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B168308F27529193006BF6F2 /* ListCharacterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		B168308127529080006BF6F2 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		B168308227529080006BF6F2 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		B168308327529080006BF6F2 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B168308E27529193006BF6F2 /* ListCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharacterViewController.swift; sourceTree = "<group>"; };
+		B168308F27529193006BF6F2 /* ListCharacterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCharacterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 		B16830612752889E006BF6F2 /* list */ = {
 			isa = PBXGroup;
 			children = (
+				B168308E27529193006BF6F2 /* ListCharacterViewController.swift */,
+				B168308F27529193006BF6F2 /* ListCharacterViewController.xib */,
 			);
 			path = list;
 			sourceTree = "<group>";
@@ -303,6 +309,7 @@
 			files = (
 				B168308427529080006BF6F2 /* OpenSans-Semibold.ttf in Resources */,
 				B168305827528843006BF6F2 /* LaunchScreen.storyboard in Resources */,
+				B168309127529193006BF6F2 /* ListCharacterViewController.xib in Resources */,
 				B168308727529080006BF6F2 /* OpenSans-ExtraBold.ttf in Resources */,
 				B168307127528C87006BF6F2 /* Localizable.strings in Resources */,
 				B168308627529080006BF6F2 /* OpenSans-Italic.ttf in Resources */,
@@ -374,6 +381,7 @@
 			files = (
 				B168304C27528841006BF6F2 /* AppDelegate.swift in Sources */,
 				B168307627528F82006BF6F2 /* Assets.generated.swift in Sources */,
+				B168309027529193006BF6F2 /* ListCharacterViewController.swift in Sources */,
 				B16830782752905B006BF6F2 /* Strings.generated.swift in Sources */,
 				B168304E27528841006BF6F2 /* SceneDelegate.swift in Sources */,
 				B168307527528F82006BF6F2 /* Fonts.generated.swift in Sources */,
@@ -531,7 +539,6 @@
 				INFOPLIST_FILE = AwesomeCharacters/configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -559,7 +566,6 @@
 				INFOPLIST_FILE = AwesomeCharacters/configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
