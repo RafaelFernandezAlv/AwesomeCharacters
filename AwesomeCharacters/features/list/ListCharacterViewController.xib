@@ -11,6 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListCharacterViewController" customModule="AwesomeCharacters" customModuleProvider="target">
             <connections>
                 <outlet property="activityIndicator" destination="7O8-Lh-4AT" id="5aP-zO-kst"/>
+                <outlet property="lbEmpty" destination="3Yp-A5-Qbn" id="0OZ-dE-xh6"/>
+                <outlet property="tableView" destination="wyF-BM-Los" id="2Pc-uo-vbF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,7 +24,17 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wyF-BM-Los">
                     <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="b31-N1-l0z"/>
+                        <outlet property="delegate" destination="-1" id="THS-GB-oq0"/>
+                    </connections>
                 </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yp-A5-Qbn">
+                    <rect key="frame" x="186.5" y="443" width="41.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7O8-Lh-4AT" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
                     <rect key="frame" x="157" y="428" width="100" height="50"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -35,11 +47,17 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3Yp-A5-Qbn" secondAttribute="trailing" constant="20" id="HCb-T7-HSJ"/>
+                <constraint firstItem="3Yp-A5-Qbn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="JrI-PW-5dh"/>
+                <constraint firstItem="3Yp-A5-Qbn" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="OcF-7o-8Pq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3Yp-A5-Qbn" secondAttribute="bottom" constant="20" id="Pwp-M4-5em"/>
                 <constraint firstItem="7O8-Lh-4AT" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="UoI-iu-3er"/>
                 <constraint firstItem="wyF-BM-Los" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WNJ-Rr-bSh"/>
                 <constraint firstAttribute="bottom" secondItem="wyF-BM-Los" secondAttribute="bottom" id="cxm-CA-SMX"/>
                 <constraint firstItem="wyF-BM-Los" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="f2a-X7-Iua"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wyF-BM-Los" secondAttribute="trailing" id="fNM-P7-z10"/>
+                <constraint firstItem="3Yp-A5-Qbn" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jIl-hr-eTb"/>
+                <constraint firstItem="3Yp-A5-Qbn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="jdS-iN-D4T"/>
                 <constraint firstItem="7O8-Lh-4AT" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="u0H-Rd-ZVH"/>
             </constraints>
             <point key="canvasLocation" x="139" y="80"/>

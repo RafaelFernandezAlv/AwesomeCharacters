@@ -12,3 +12,20 @@ enum AppError: Error {
     case invalidStatusCode(code: Int)
     case invalidResponse
 }
+
+extension Error {
+    func normalizeError() -> String {
+        if let error = self as? AppError {
+            switch error {
+            case .invalidURL:
+                return L10n.Error.invalidURL
+            case .invalidStatusCode(let code):
+                return L10n.Error.invalidStatusCode(code)
+            case .invalidResponse:
+                return L10n.Error.invalidResponse
+            }
+        } else {
+            return L10n.Error.unknown
+        }
+    }
+}

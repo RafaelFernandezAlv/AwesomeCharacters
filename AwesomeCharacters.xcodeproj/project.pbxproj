@@ -40,6 +40,9 @@
 		B16830A62752AC63006BF6F2 /* CharacterBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16830A52752AC63006BF6F2 /* CharacterBO.swift */; };
 		B16830A92752ACCB006BF6F2 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16830A82752ACCB006BF6F2 /* APIRequest.swift */; };
 		B16830AB2752AF05006BF6F2 /* CharacterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16830AA2752AF05006BF6F2 /* CharacterMapper.swift */; };
+		B16830AF2752B7F0006BF6F2 /* ListCharacterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16830AD2752B7F0006BF6F2 /* ListCharacterViewCell.swift */; };
+		B16830B02752B7F0006BF6F2 /* ListCharacterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B16830AE2752B7F0006BF6F2 /* ListCharacterViewCell.xib */; };
+		B16830B22752BA1A006BF6F2 /* UseCaseCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16830B12752BA1A006BF6F2 /* UseCaseCharacters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +84,9 @@
 		B16830A52752AC63006BF6F2 /* CharacterBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBO.swift; sourceTree = "<group>"; };
 		B16830A82752ACCB006BF6F2 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		B16830AA2752AF05006BF6F2 /* CharacterMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterMapper.swift; sourceTree = "<group>"; };
+		B16830AD2752B7F0006BF6F2 /* ListCharacterViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharacterViewCell.swift; sourceTree = "<group>"; };
+		B16830AE2752B7F0006BF6F2 /* ListCharacterViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCharacterViewCell.xib; sourceTree = "<group>"; };
+		B16830B12752BA1A006BF6F2 /* UseCaseCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseCharacters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,7 @@
 		B16830612752889E006BF6F2 /* list */ = {
 			isa = PBXGroup;
 			children = (
+				B16830AC2752B7C2006BF6F2 /* cells */,
 				B1683092275293B2006BF6F2 /* ListCharactersPresenter.swift */,
 				B168308E27529193006BF6F2 /* ListCharacterViewController.swift */,
 				B168308F27529193006BF6F2 /* ListCharacterViewController.xib */,
@@ -228,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				B168309727529AAC006BF6F2 /* UseCaseCharactersGetList.swift */,
+				B16830B12752BA1A006BF6F2 /* UseCaseCharacters.swift */,
 			);
 			path = useCases;
 			sourceTree = "<group>";
@@ -279,6 +287,15 @@
 				B168309D27529FAA006BF6F2 /* Strings+Extensions.swift */,
 			);
 			path = others;
+			sourceTree = "<group>";
+		};
+		B16830AC2752B7C2006BF6F2 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				B16830AD2752B7F0006BF6F2 /* ListCharacterViewCell.swift */,
+				B16830AE2752B7F0006BF6F2 /* ListCharacterViewCell.xib */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 		E5644E9EF44D510C1A16B488 /* Pods */ = {
@@ -353,6 +370,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16830B02752B7F0006BF6F2 /* ListCharacterViewCell.xib in Resources */,
 				B168308427529080006BF6F2 /* OpenSans-Semibold.ttf in Resources */,
 				B168305827528843006BF6F2 /* LaunchScreen.storyboard in Resources */,
 				B168309127529193006BF6F2 /* ListCharacterViewController.xib in Resources */,
@@ -428,6 +446,7 @@
 				B16830A42752A4C1006BF6F2 /* CharacterDTO.swift in Sources */,
 				B168309E27529FAA006BF6F2 /* Strings+Extensions.swift in Sources */,
 				B168304C27528841006BF6F2 /* AppDelegate.swift in Sources */,
+				B16830B22752BA1A006BF6F2 /* UseCaseCharacters.swift in Sources */,
 				B168309C27529C19006BF6F2 /* Constants.swift in Sources */,
 				B168309A27529B39006BF6F2 /* CharactersRepository.swift in Sources */,
 				B16830A027529FFC006BF6F2 /* AppError.swift in Sources */,
@@ -442,6 +461,7 @@
 				B168309827529AAC006BF6F2 /* UseCaseCharactersGetList.swift in Sources */,
 				B16830A92752ACCB006BF6F2 /* APIRequest.swift in Sources */,
 				B16830A22752A434006BF6F2 /* ResponseDTO.swift in Sources */,
+				B16830AF2752B7F0006BF6F2 /* ListCharacterViewCell.swift in Sources */,
 				B168307527528F82006BF6F2 /* Fonts.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

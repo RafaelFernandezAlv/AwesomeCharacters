@@ -43,7 +43,7 @@ extension APIRequest {
         
         private func makeRequest(components: URLComponents) throws -> URLRequest {
             var components = components
-            let tsValue = "\(Date().timeIntervalSince1970)"
+            let tsValue = "\(Int(Date().timeIntervalSince1970))"
             components.queryItems = [
                 URLQueryItem(name: Constants.WS.Key.apikey, value: Constants.WS.Key.Value.publicKey),
                 URLQueryItem(name: Constants.WS.Key.ts, value: tsValue),

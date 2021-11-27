@@ -9,10 +9,10 @@ import Foundation
 
 struct Constants {
     struct WS {
-        static let baseURL = "https://gateway.marvel.com/"
-        static let listCharacters = "\(baseURL)v1/public/characters/"
+        static let baseURL = "https://gateway.marvel.com"
+        static let listCharacters = "\(baseURL)/v1/public/characters"
         static func detailCharacter(id: Int) -> String {
-            return "\(listCharacters)\(id)"
+            return "\(listCharacters)/\(id)"
         }
         
         static let timeOut: TimeInterval = 15

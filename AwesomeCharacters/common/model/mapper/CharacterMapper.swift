@@ -16,6 +16,7 @@ extension CharacterDTO {
 extension CharacterBO {
     init?(dto item: CharacterDTO) {
         guard let id = item.id,
+              let name = item.name,
               let description = item.resultDescription,
               let thumbnailPath = item.thumbnail?.path,
               let thumbnailExtension = item.thumbnail?.thumbnailExtension,
@@ -39,6 +40,7 @@ extension CharacterBO {
               }) else { return nil}
         
         self.id = id
+        self.name = name
         self.description = description
         self.thumbnail = thumbnail
         self.comicsTitle = comicsTitle

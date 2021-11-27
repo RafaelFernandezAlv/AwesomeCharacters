@@ -14,6 +14,8 @@ protocol ListCharacterView: UIViewController {
 
 final class ListCharacterViewController: UIViewController {
     
+    @IBOutlet weak var lbEmpty: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: NVActivityIndicatorView!
     
     lazy var presenter: ListCharactersPresenterActions = ListCharactersPresenter(delegate: self)
@@ -23,13 +25,18 @@ final class ListCharacterViewController: UIViewController {
         
         presenter.viewDidLoad()
     }
+    
 }
 
 extension ListCharacterViewController: ListCharacterView { }
 
 extension ListCharacterViewController: ListCharactersPresenterDelegate {
     func itemLoaded(_ item: ListCharacterVO) {
-        
+        tableView.reloadData()
+    }
+    
+    func registerCells() {
+        tableView.register(ListCharacterViewCell.nib, forCellReuseIdentifier: ListCharacterViewCell.cellIdentifier)
     }
     
     func loadUI() {
@@ -51,6 +58,45 @@ extension ListCharacterViewController: ListCharactersPresenterDelegate {
         } completion: { _ in
             self.activityIndicator.stopAnimating()
         }
+    }
+    
+    func showEmptyResult(text: String) {
+        lbEmpty.text = text
+        UIView.animate(withDuration: 0.3) {
+            self.lbEmpty.alpha = 1
+        }
+    }
+    
+    func hideEmptyResult() {
+        UIView.animate(withDuration: 0.3) {
+            self.lbEmpty.alpha = 0
+        }
+    }
+}
 
+
+extension ListCharacterViewController: UITableViewDelegate { }
+
+extension ListCharacterViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return presenter.item?.rows.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let items = presenter.item?.rows else { return UITableViewCell() }
+        
+        switch items[indexPath.row] {
+        case .list(let item):
+            if let cell = tableView.dequeueReusableCell(withIdentifier: ListCharacterViewCell.cellIdentifier) as? ListCharacterViewCell {
+                cell.loadCell(item: item)
+                return cell
+            }
+        }
+        
+        return UITableViewCell()
     }
 }

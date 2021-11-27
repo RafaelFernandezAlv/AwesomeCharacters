@@ -11,7 +11,7 @@ protocol UseCaseCharactersGetList {
     func execute() async throws -> [CharacterBO]?
 }
 
-final class UseCaseCharacters {
+extension UseCaseCharacters {
     final class GetList: UseCaseCharactersGetList {
         lazy var repository: CharactersRepositoryActions = CharactersRepository()
         
