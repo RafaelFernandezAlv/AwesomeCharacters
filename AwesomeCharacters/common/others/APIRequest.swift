@@ -27,14 +27,14 @@ final class APIRequest {
 
 extension APIRequest {
     enum Mode {
-        case list
+        case list(page: Int)
         case detail(Int)
         
         func getRequest() throws -> URLRequest {
             var components: URLComponents
             switch self {
-            case .list:
-                components = try Constants.WS.listCharacters.toUrlComponents()
+            case .list(let page):
+                components = try Constants.WS.listCharacters(page: page).toUrlComponents()
             case .detail(let id):
                 components = try Constants.WS.detailCharacter(id: id).toUrlComponents()
             }
@@ -44,7 +44,7 @@ extension APIRequest {
         private func makeRequest(components: URLComponents) throws -> URLRequest {
             var components = components
             let tsValue = "\(Int(Date().timeIntervalSince1970))"
-            components.queryItems = [
+            components.queryItems = (components.queryItems ?? []) + [
                 URLQueryItem(name: Constants.WS.Key.apikey, value: Constants.WS.Key.Value.publicKey),
                 URLQueryItem(name: Constants.WS.Key.ts, value: tsValue),
                 URLQueryItem(name: Constants.WS.Key.hash, value: Constants.WS.Key.Value.hash(ts: tsValue)),

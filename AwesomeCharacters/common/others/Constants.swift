@@ -10,7 +10,10 @@ import Foundation
 struct Constants {
     struct WS {
         static let baseURL = "https://gateway.marvel.com"
-        static let listCharacters = "\(baseURL)/v1/public/characters"
+        private static let listCharacters = "\(baseURL)/v1/public/characters"
+        static func listCharacters(page: Int) -> String {
+            return "\(listCharacters)?offset=\(20 * page)"
+        }
         static func detailCharacter(id: Int) -> String {
             return "\(listCharacters)/\(id)"
         }

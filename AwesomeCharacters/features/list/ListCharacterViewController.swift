@@ -28,11 +28,26 @@ final class ListCharacterViewController: UIViewController {
     
 }
 
-extension ListCharacterViewController: ListCharacterView { }
+extension ListCharacterViewController: ListCharacterView {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let totalRows = presenter.item?.rows.count else { return }
+        if indexPath.row >= totalRows - 2 {
+            presenter.requestMore()
+        }
+    }
+}
 
 extension ListCharacterViewController: ListCharactersPresenterDelegate {
-    func itemLoaded(_ item: ListCharacterVO) {
-        tableView.reloadData()
+    func itemLoaded(startIndex: Int, numItems: Int) {
+        if startIndex == 0 {
+            tableView.reloadData()
+        } else {
+            var insertIndexPaths: [IndexPath] = []
+            for i in startIndex..<(startIndex + numItems) {
+                insertIndexPaths.append(IndexPath(row: i, section: 0))
+            }
+            tableView.insertRows(at: insertIndexPaths, with: .automatic)
+        }
     }
     
     func registerCells() {

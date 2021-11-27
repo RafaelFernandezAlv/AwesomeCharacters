@@ -9,14 +9,21 @@ import Foundation
 
 
 final class ListCharacterVO {
-    let itemsBO: [CharacterBO]
+    private(set) var itemsBO: [CharacterBO]
     
-    lazy var rows: [Rows] = {
-        return itemsBO.map { Rows.list(CharacterVO(item: $0)) }
-    }()
+    lazy var rows: [Rows] = generateRows()
     
     init(items: [CharacterBO]) {
         self.itemsBO = items
+    }
+    
+    private func generateRows() -> [Rows] {
+        return itemsBO.map { Rows.list(CharacterVO(item: $0)) }
+    }
+    
+    func appendItems(items: [CharacterBO]) {
+        itemsBO.append(contentsOf: items)
+        self.rows = generateRows()
     }
     
 }
