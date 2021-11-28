@@ -26,7 +26,7 @@ class DetailCharacterImageCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) { }
     
     func loadCell(url: URL) {
-        imgMain.kf.setImage(with: url)
+        imgMain.kf.setImage(with: url, options: [.transition(.fade(0.25))])
     }
     
 }

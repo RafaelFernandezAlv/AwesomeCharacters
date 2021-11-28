@@ -43,6 +43,11 @@ internal enum L10n {
     internal static let wiki = L10n.tr("Localizable", "link.wiki")
   }
 
+  internal enum Search {
+    /// Empieza por...
+    internal static let placeholder = L10n.tr("Localizable", "search.placeholder")
+  }
+
   internal enum Test {
     /// value
     internal static let key = L10n.tr("Localizable", "test.key")

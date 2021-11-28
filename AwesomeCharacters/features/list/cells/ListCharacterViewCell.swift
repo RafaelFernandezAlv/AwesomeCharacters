@@ -40,7 +40,7 @@ class ListCharacterViewCell: UITableViewCell {
     
     func loadCell(item: ListCharacterVO.CharacterVO) {
         if let imageURL = item.imageURL {
-            imgBackground.kf.setImage(with: imageURL) { [weak self] result in
+            imgBackground.kf.setImage(with: imageURL, options: [.transition(.fade(0.25))]) { [weak self] result in
                 switch result {
                 case .failure:
                     self?.imgBackground.image = Asset.placeholderEmpty.image

@@ -24,14 +24,14 @@
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNi-Wc-VrU">
-                        <rect key="frame" x="0.0" y="109" width="320" height="91"/>
+                        <rect key="frame" x="0.0" y="129" width="320" height="71"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IGs-Hp-ayb">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WUr-DI-2nX">
-                                <rect key="frame" x="20" y="20" width="280" height="51"/>
+                                <rect key="frame" x="20" y="10" width="280" height="51"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK6-CP-iOO">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="20.5"/>
@@ -51,10 +51,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="IGs-Hp-ayb" firstAttribute="leading" secondItem="yNi-Wc-VrU" secondAttribute="leading" id="0NC-R4-Nlr"/>
-                            <constraint firstAttribute="bottom" secondItem="WUr-DI-2nX" secondAttribute="bottom" constant="20" id="6Rb-Hu-OSJ"/>
+                            <constraint firstAttribute="bottom" secondItem="WUr-DI-2nX" secondAttribute="bottom" constant="10" id="6Rb-Hu-OSJ"/>
                             <constraint firstAttribute="bottom" secondItem="IGs-Hp-ayb" secondAttribute="bottom" id="Dff-C5-WeJ"/>
                             <constraint firstItem="WUr-DI-2nX" firstAttribute="leading" secondItem="yNi-Wc-VrU" secondAttribute="leading" constant="20" id="P7E-oq-dwF"/>
-                            <constraint firstItem="WUr-DI-2nX" firstAttribute="top" secondItem="yNi-Wc-VrU" secondAttribute="top" constant="20" id="ZKb-t3-xDm"/>
+                            <constraint firstItem="WUr-DI-2nX" firstAttribute="top" secondItem="yNi-Wc-VrU" secondAttribute="top" constant="10" id="ZKb-t3-xDm"/>
                             <constraint firstAttribute="trailing" secondItem="IGs-Hp-ayb" secondAttribute="trailing" id="Zm7-bv-bzO"/>
                             <constraint firstAttribute="trailing" secondItem="WUr-DI-2nX" secondAttribute="trailing" constant="20" id="e2L-cA-H07"/>
                             <constraint firstItem="IGs-Hp-ayb" firstAttribute="top" secondItem="yNi-Wc-VrU" secondAttribute="top" id="gVA-KG-T9C"/>

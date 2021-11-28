@@ -25,3 +25,4 @@
 "link.detail" = "Ir al detalle";
 "link.wiki" = "Ir a la wiki";
 "link.comic" = "Ir a los comics";
+"search.placeholder" = "Empieza por...";

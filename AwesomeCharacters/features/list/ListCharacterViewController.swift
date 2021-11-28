@@ -67,6 +67,8 @@ extension ListCharacterViewController: ListCharactersPresenterDelegate {
         btnRetry.setTitle(L10n.retry, for: .normal)
         
         self.title = L10n.Title.list
+        
+        searchBar.placeholder = L10n.Search.placeholder
     }
     
     func showLoader() {
