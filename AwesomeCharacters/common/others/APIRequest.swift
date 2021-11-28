@@ -27,14 +27,14 @@ final class APIRequest {
 
 extension APIRequest {
     enum Mode {
-        case list(page: Int)
+        case list(page: Int, text: String?)
         case detail(Int)
         
         func getRequest() throws -> URLRequest {
             var components: URLComponents
             switch self {
-            case .list(let page):
-                components = try Constants.WS.listCharacters(page: page).toUrlComponents()
+            case .list(let page, let text):
+                components = try Constants.WS.listCharacters(page: page, text: text).toUrlComponents()
             case .detail(let id):
                 components = try Constants.WS.detailCharacter(id: id).toUrlComponents()
             }

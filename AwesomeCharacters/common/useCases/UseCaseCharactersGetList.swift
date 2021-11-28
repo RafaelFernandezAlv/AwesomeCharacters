@@ -8,26 +8,41 @@
 import Foundation
 
 protocol UseCaseCharactersGetList {
-    func firstPage() async throws -> [CharacterBO]?
-    func nextPage() async throws -> [CharacterBO]?
+    func firstPage(text: String?) async throws -> [CharacterBO]?
+    func nextPage(text: String?) async throws -> [CharacterBO]?
+    var finishList: Bool { get }
 }
 
 extension UseCaseCharacters {
     final class GetList: UseCaseCharactersGetList {
         lazy var repository: CharactersRepositoryActions = CharactersRepository()
         var page: Int = 0
+        var total: Int?
         
-        func firstPage() async throws -> [CharacterBO]? {
-            return try await execute(page: page)
+        var finishList: Bool {
+            if let total = total {
+                return ((page + 1) * Constants.WS.offsetList) >= total
+            } else {
+                return false
+            }
         }
         
-        func nextPage() async throws -> [CharacterBO]? {
+        func firstPage(text: String?) async throws -> [CharacterBO]? {
+            page = 0
+            total = nil
+            return try await execute(page: page, text: text)
+        }
+        
+        func nextPage(text: String?) async throws -> [CharacterBO]? {
+            guard !finishList else { return nil }
             page += 1
-            return try await execute(page: page)
+            return try await execute(page: page, text: text)
         }
         
-        private func execute(page: Int) async throws -> [CharacterBO]? {
-            return try await repository.getList(page: page)
+        private func execute(page: Int, text: String?) async throws -> [CharacterBO]? {
+            let results = try await repository.getList(page: page, text: text)
+            total = results.1
+            return results.0
         }
             
     }

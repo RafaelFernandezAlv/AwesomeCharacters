@@ -14,6 +14,7 @@
                 <outlet property="btnRetry" destination="cxc-Jw-Kce" id="MjF-tm-JJr"/>
                 <outlet property="lbEmpty" destination="3Yp-A5-Qbn" id="0OZ-dE-xh6"/>
                 <outlet property="lbError" destination="Vvw-hT-YJm" id="vTA-be-OQJ"/>
+                <outlet property="searchBar" destination="aFw-dX-a2G" id="JFy-oL-jCw"/>
                 <outlet property="tableView" destination="wyF-BM-Los" id="2Pc-uo-vbF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewEmpty" destination="NQq-pX-dMl" id="b3V-rR-Odf"/>
@@ -25,8 +26,15 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="aFw-dX-a2G">
+                    <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="K1N-F4-lth"/>
+                    </connections>
+                </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wyF-BM-Los">
-                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <rect key="frame" x="0.0" y="95" width="414" height="801"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="b31-N1-l0z"/>
@@ -95,13 +103,16 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="E6d-yD-fbc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="5Jo-B6-Ypv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aFw-dX-a2G" secondAttribute="trailing" id="6qc-m4-g5z"/>
                 <constraint firstItem="E6d-yD-fbc" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="DJH-qj-bEN"/>
                 <constraint firstItem="E6d-yD-fbc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Fwd-za-9jT"/>
+                <constraint firstItem="aFw-dX-a2G" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MAU-z7-ad6"/>
+                <constraint firstItem="aFw-dX-a2G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RNj-KF-CEq"/>
+                <constraint firstItem="wyF-BM-Los" firstAttribute="top" secondItem="aFw-dX-a2G" secondAttribute="bottom" id="ShR-qG-TH5"/>
                 <constraint firstItem="NQq-pX-dMl" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="U8b-7I-YLD"/>
                 <constraint firstItem="7O8-Lh-4AT" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="UoI-iu-3er"/>
                 <constraint firstItem="wyF-BM-Los" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WNJ-Rr-bSh"/>
                 <constraint firstAttribute="bottom" secondItem="wyF-BM-Los" secondAttribute="bottom" id="cxm-CA-SMX"/>
-                <constraint firstItem="wyF-BM-Los" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="f2a-X7-Iua"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wyF-BM-Los" secondAttribute="trailing" id="fNM-P7-z10"/>
                 <constraint firstItem="NQq-pX-dMl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="jlD-if-V9g"/>
                 <constraint firstItem="NQq-pX-dMl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="nJg-wj-0iw"/>

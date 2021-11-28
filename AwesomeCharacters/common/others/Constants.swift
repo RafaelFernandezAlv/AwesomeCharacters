@@ -11,8 +11,13 @@ struct Constants {
     struct WS {
         static let baseURL = "https://gateway.marvel.com"
         private static let listCharacters = "\(baseURL)/v1/public/characters"
-        static func listCharacters(page: Int) -> String {
-            return "\(listCharacters)?offset=\(20 * page)"
+        static let offsetList = 20
+        static func listCharacters(page: Int, text: String?) -> String {
+            var result = "\(listCharacters)?offset=\(offsetList * page)"
+            if let text = text?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed), !text.isEmpty {
+                result = "\(result)&nameStartsWith=\(text)"
+            }
+            return result
         }
         static func detailCharacter(id: Int) -> String {
             return "\(listCharacters)/\(id)"
