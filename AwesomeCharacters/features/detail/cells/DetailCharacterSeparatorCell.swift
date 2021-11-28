@@ -22,10 +22,7 @@ class DetailCharacterSeparatorCell: UITableViewCell {
         viewSeparator.backgroundColor = .gray
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    override var selectionStyle: UITableViewCell.SelectionStyle { get { .none } set { } }
+    override func setSelected(_ selected: Bool, animated: Bool) { }
     
 }

@@ -22,11 +22,8 @@ class DetailCharacterImageCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    override var selectionStyle: UITableViewCell.SelectionStyle { get { .none } set { } }
+    override func setSelected(_ selected: Bool, animated: Bool) { }
     
     func loadCell(url: URL) {
         imgMain.kf.setImage(with: url)
