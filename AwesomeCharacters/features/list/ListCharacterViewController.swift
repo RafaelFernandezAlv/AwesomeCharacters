@@ -68,6 +68,8 @@ extension ListCharacterViewController: ListCharactersPresenterDelegate {
         view.backgroundColor = .white
         
         btnRetry.setTitle(L10n.retry, for: .normal)
+        
+        self.title = L10n.Title.list
     }
     
     func showLoader() {

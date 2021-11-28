@@ -14,3 +14,4 @@
 "error.invalidResponse" = "Ha ocurrido un error. La respuesta de la petición no es correcta";
 "error.invalidStatusCode" = "Ha ocurrido un error. La respuesta de la petición no es correcta: Status code %d";
 "retry" = "Reintentar";
+"title.list" = "Listado";
