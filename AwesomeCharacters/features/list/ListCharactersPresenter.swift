@@ -7,9 +7,10 @@
 
 import Foundation
 import Combine
+import UIKit
 
 @MainActor
-protocol ListCharactersPresenterDelegate: AnyObject {
+protocol ListCharactersPresenterDelegate: UIViewController {
     func itemLoaded(startIndex: Int, numItems: Int)
     func loadUI()
     func showEmptyResult(text: String)
@@ -25,11 +26,13 @@ protocol ListCharactersPresenterDelegate: AnyObject {
 
 @MainActor
 protocol ListCharactersPresenterActions {
+    init(delegate: ListCharactersPresenterDelegate)
+    var item: ListCharacterVO? { get }
     func viewDidLoad()
     func requestFirst()
     func requestMore()
     func searchByText(text: String?)
-    var item: ListCharacterVO? { get }
+    func goToDetail(index: Int)
 }
 
 @MainActor
@@ -55,7 +58,7 @@ final class ListCharactersPresenter {
         delegate.hideError()
         delegate.showLoader()
         do {
-            if let result = try await useCaseGetList.firstPage(text: lastSeatchText) {
+            if let result = try await useCaseGetList.firstPage(text: lastSeatchText), !result.isEmpty {
                 let vo = ListCharacterVO(items: result)
                 self.item = vo
                 delegate.showTable()
@@ -136,5 +139,11 @@ extension ListCharactersPresenter: ListCharactersPresenterActions {
     
     func searchByText(text: String?) {
         searchText.send(text)
+    }
+    
+    func goToDetail(index: Int) {
+        if let characterBO = item?.itemsBO[index] {
+            delegate.navigationController?.pushViewController(DetailCharacterViewController(itemBO: characterBO), animated: true)
+        }
     }
 }

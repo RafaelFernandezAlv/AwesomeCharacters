@@ -26,8 +26,21 @@ internal enum L10n {
     }
     /// Ha ocurrido un error. La petición no es correcta
     internal static let invalidURL = L10n.tr("Localizable", "error.invalidURL")
+    /// Ha ocurrido un error. Comprube su conexión a internet
+    internal static let noInternetConnection = L10n.tr("Localizable", "error.noInternetConnection")
+    /// Ha ocurrido un error. Tiempo de espera agotado
+    internal static let timeOut = L10n.tr("Localizable", "error.timeOut")
     /// Ha ocurrido un error desconocido
     internal static let unknown = L10n.tr("Localizable", "error.unknown")
+  }
+
+  internal enum Link {
+    /// Ir a los comics
+    internal static let comic = L10n.tr("Localizable", "link.comic")
+    /// Ir al detalle
+    internal static let detail = L10n.tr("Localizable", "link.detail")
+    /// Ir a la wiki
+    internal static let wiki = L10n.tr("Localizable", "link.wiki")
   }
 
   internal enum Test {
@@ -36,8 +49,18 @@ internal enum L10n {
   }
 
   internal enum Title {
+    /// Apariciones en comics
+    internal static let comic = L10n.tr("Localizable", "title.comic")
+    /// Apariciones en eventos
+    internal static let events = L10n.tr("Localizable", "title.events")
+    /// Enlaces
+    internal static let links = L10n.tr("Localizable", "title.links")
     /// Listado
     internal static let list = L10n.tr("Localizable", "title.list")
+    /// Apariciones en series
+    internal static let series = L10n.tr("Localizable", "title.series")
+    /// Apariciones en historias
+    internal static let stories = L10n.tr("Localizable", "title.stories")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

@@ -24,6 +24,10 @@ extension Error {
             case .invalidResponse:
                 return L10n.Error.invalidResponse
             }
+        } else if let error = self as? NSError, error.domain == NSURLErrorDomain, error.code == NSURLErrorNotConnectedToInternet {
+            return L10n.Error.noInternetConnection
+        } else if let error = self as? NSError, error.domain == NSURLErrorDomain, error.code == NSURLErrorTimedOut {
+            return L10n.Error.timeOut
         } else {
             return L10n.Error.unknown
         }

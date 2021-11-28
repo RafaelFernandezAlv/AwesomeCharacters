@@ -9,10 +9,6 @@ import UIKit
 import NVActivityIndicatorView
 import Combine
 
-protocol ListCharacterView: UIViewController {
-    
-}
-
 @MainActor
 final class ListCharacterViewController: UIViewController {
     
@@ -42,13 +38,14 @@ final class ListCharacterViewController: UIViewController {
     
 }
 
-extension ListCharacterViewController: ListCharacterView { }
-
+@MainActor
 extension ListCharacterViewController: ListCharactersPresenterDelegate {
     func itemLoaded(startIndex: Int, numItems: Int) {
         if startIndex == 0 {
             tableView.reloadData()
-            tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
+            if numItems > 0 {
+                tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
+            }
         } else {
             var insertIndexPaths: [IndexPath] = []
             for i in startIndex..<(startIndex + numItems) {
@@ -127,6 +124,7 @@ extension ListCharacterViewController: ListCharactersPresenterDelegate {
 }
 
 
+@MainActor
 extension ListCharacterViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard let totalRows = presenter.item?.rows.count else { return }
@@ -134,8 +132,14 @@ extension ListCharacterViewController: UITableViewDelegate {
             presenter.requestMore()
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        presenter.goToDetail(index: indexPath.row)
+    }
 }
 
+@MainActor
 extension ListCharacterViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
