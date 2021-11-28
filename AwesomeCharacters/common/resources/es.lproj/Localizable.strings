@@ -8,8 +8,9 @@
 
 "test.key" = "value";
 "empty" = "--";
-"noResults" = "Sin resultados";
+"noResults" = "Sin resultados. Inténtelo de nuevo con otros filtros.";
 "error.unknown" = "Ha ocurrido un error desconocido";
 "error.invalidURL" = "Ha ocurrido un error. La petición no es correcta";
 "error.invalidResponse" = "Ha ocurrido un error. La respuesta de la petición no es correcta";
 "error.invalidStatusCode" = "Ha ocurrido un error. La respuesta de la petición no es correcta: Status code %d";
+"retry" = "Reintentar";

@@ -12,9 +12,16 @@ protocol ListCharacterView: UIViewController {
     
 }
 
+@MainActor
 final class ListCharacterViewController: UIViewController {
     
+    @IBOutlet weak var lbError: UILabel!
+    @IBOutlet weak var viewError: UIView!
+    @IBOutlet weak var btnRetry: UIButton!
+    
+    @IBOutlet weak var viewEmpty: UIView!
     @IBOutlet weak var lbEmpty: UILabel!
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: NVActivityIndicatorView!
     
@@ -24,6 +31,11 @@ final class ListCharacterViewController: UIViewController {
         super.viewDidLoad()
         
         presenter.viewDidLoad()
+    }
+    
+    //MARK: - Actions
+    @IBAction func actionRetry(_ sender: Any) {
+        presenter.requestFirst()
     }
     
 }
@@ -58,6 +70,8 @@ extension ListCharacterViewController: ListCharactersPresenterDelegate {
         activityIndicator.type = .pacman
         activityIndicator.color = .red
         view.backgroundColor = .white
+        
+        btnRetry.setTitle(L10n.retry, for: .normal)
     }
     
     func showLoader() {
@@ -78,13 +92,26 @@ extension ListCharacterViewController: ListCharactersPresenterDelegate {
     func showEmptyResult(text: String) {
         lbEmpty.text = text
         UIView.animate(withDuration: 0.3) {
-            self.lbEmpty.alpha = 1
+            self.viewEmpty.alpha = 1
         }
     }
     
     func hideEmptyResult() {
         UIView.animate(withDuration: 0.3) {
-            self.lbEmpty.alpha = 0
+            self.viewEmpty.alpha = 0
+        }
+    }
+    
+    func showError(text: String) {
+        lbError.text = text
+        UIView.animate(withDuration: 0.3) {
+            self.viewError.alpha = 1
+        }
+    }
+    
+    func hideError() {
+        UIView.animate(withDuration: 0.3) {
+            self.viewError.alpha = 0
         }
     }
 }

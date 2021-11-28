@@ -12,8 +12,10 @@ import Foundation
 internal enum L10n {
   /// --
   internal static let empty = L10n.tr("Localizable", "empty")
-  /// Sin resultados
+  /// Sin resultados. Inténtelo de nuevo con otros filtros.
   internal static let noResults = L10n.tr("Localizable", "noResults")
+  /// Reintentar
+  internal static let retry = L10n.tr("Localizable", "retry")
 
   internal enum Error {
     /// Ha ocurrido un error. La respuesta de la petición no es correcta

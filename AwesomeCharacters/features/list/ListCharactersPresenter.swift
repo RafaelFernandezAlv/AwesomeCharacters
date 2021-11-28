@@ -13,21 +13,27 @@ protocol ListCharactersPresenterDelegate: AnyObject {
     func loadUI()
     func showEmptyResult(text: String)
     func hideEmptyResult()
+    func showError(text: String)
+    func hideError()
     func showLoader()
     func hideLoader()
     func registerCells()
 }
 
+@MainActor
 protocol ListCharactersPresenterActions {
-    @MainActor func viewDidLoad()
-    @MainActor func requestMore()
+    func viewDidLoad()
+    func requestFirst()
+    func requestMore()
     var item: ListCharacterVO? { get }
 }
 
+@MainActor
 final class ListCharactersPresenter {
     unowned var delegate: ListCharactersPresenterDelegate
     var item: ListCharacterVO?
-    fileprivate var isLoading = false
+    fileprivate var isLoadingMore = false
+    fileprivate var currentTask: Task<(), Never>?
     
     lazy var useCaseGetList: UseCaseCharactersGetList = UseCaseCharacters.GetList()
     
@@ -35,9 +41,9 @@ final class ListCharactersPresenter {
         self.delegate = delegate
     }
     
-    @MainActor
     fileprivate func loadFirst() async {
         delegate.hideEmptyResult()
+        delegate.hideError()
         delegate.showLoader()
         do {
             if let result = try await useCaseGetList.firstPage() {
@@ -48,12 +54,13 @@ final class ListCharactersPresenter {
                 delegate.showEmptyResult(text: L10n.noResults)
             }
         } catch let error {
-            delegate.showEmptyResult(text: error.normalizeError())
+            if !Task.isCancelled {
+                delegate.showError(text: error.normalizeError())
+            }
         }
         delegate.hideLoader()
     }
     
-    @MainActor
     fileprivate func loadNext() async {
         delegate.showLoader()
         do {
@@ -61,32 +68,42 @@ final class ListCharactersPresenter {
                 let startIndex = item.itemsBO.count
                 item.appendItems(items: result)
                 delegate.itemLoaded(startIndex: startIndex, numItems: result.count)
-            } else {
-                delegate.showEmptyResult(text: L10n.noResults)
             }
         } catch let error {
-            delegate.showEmptyResult(text: error.normalizeError())
+            if !Task.isCancelled {
+                delegate.showError(text: error.normalizeError())
+            }
         }
         delegate.hideLoader()
+    }
+    
+    fileprivate func cancelTask() {
+        currentTask?.cancel()
+        currentTask = nil
+        isLoadingMore = false
     }
 }
 
 extension ListCharactersPresenter: ListCharactersPresenterActions {
-    @MainActor
     func viewDidLoad() {
         delegate.registerCells()
         delegate.loadUI()
-        Task {
-            await loadFirst()
-        }
+        requestFirst()
     }
     
     func requestMore() {
-        Task {
-            guard !isLoading else { return }
-            isLoading = true
+        guard !isLoadingMore else { return }
+        currentTask = Task {
+            isLoadingMore = true
             await loadNext()
-            isLoading = false
+            isLoadingMore = false
+        }
+    }
+    
+    func requestFirst() {
+        currentTask?.cancel()
+        currentTask = Task {
+            await loadFirst()
         }
     }
 }
