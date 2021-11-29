@@ -60,14 +60,14 @@ extension ListCharacterViewController: ListCharactersPresenterDelegate {
     }
     
     func loadUI() {
-        activityIndicator.type = .pacman
-        activityIndicator.color = .red
-        view.backgroundColor = .white
-        
-        btnRetry.setTitle(L10n.retry, for: .normal)
-        
         self.title = L10n.Title.list
         
+        navigationController?.styleDefault()
+        view.styleBackground()
+        activityIndicator.styleDefault()
+        searchBar.styleDefault()
+        
+        btnRetry.setTitle(L10n.retry, for: .normal)
         searchBar.placeholder = L10n.Search.placeholder
     }
     

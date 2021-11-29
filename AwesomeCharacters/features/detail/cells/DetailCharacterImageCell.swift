@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import AZImagePreview
 
 class DetailCharacterImageCell: UITableViewCell {
     static let cellIdentifier = "DetailCharacterImageCellIdentifier"
@@ -16,6 +17,7 @@ class DetailCharacterImageCell: UITableViewCell {
     }
     
     @IBOutlet private var imgMain: UIImageView!
+    @IBOutlet weak var imgBlur: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,8 +27,20 @@ class DetailCharacterImageCell: UITableViewCell {
     override var selectionStyle: UITableViewCell.SelectionStyle { get { .none } set { } }
     override func setSelected(_ selected: Bool, animated: Bool) { }
     
-    func loadCell(url: URL) {
-        imgMain.kf.setImage(with: url, options: [.transition(.fade(0.25))])
+    func loadCell(url: URL, delegate: AZPreviewImageViewDelegate) {
+        imgMain.delegate = delegate
+        imgMain.kf.setImage(with: url, options: [.transition(.fade(0.25))]) { [weak self] result in
+            switch result {
+            case .success(let result):
+                DispatchQueue.global().async {
+                    if let image = result.image.blurEffect() {
+                        DispatchQueue.main.async {
+                            self?.imgBlur.image = image
+                        }
+                    }
+                }
+            default: break
+            }
+        }
     }
-    
 }

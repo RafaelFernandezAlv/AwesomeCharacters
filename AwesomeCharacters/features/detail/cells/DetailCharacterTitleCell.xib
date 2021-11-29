@@ -17,14 +17,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Anc-Qe-LFC">
-                        <rect key="frame" x="10" y="5" width="41.5" height="34"/>
+                        <rect key="frame" x="139.5" y="5" width="41.5" height="34"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Anc-Qe-LFC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="AUz-KW-qup"/>
+                    <constraint firstItem="Anc-Qe-LFC" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="U19-oU-g3r"/>
                     <constraint firstItem="Anc-Qe-LFC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="brU-9t-gRy"/>
                     <constraint firstAttribute="bottom" secondItem="Anc-Qe-LFC" secondAttribute="bottom" constant="5" id="qPv-D0-nBa"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Anc-Qe-LFC" secondAttribute="trailing" constant="10" id="wsV-QD-xws"/>

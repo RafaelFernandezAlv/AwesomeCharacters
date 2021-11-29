@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		476E58F985EC2A642951F646 /* libPods-AwesomeCharacters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FF02964BCDE3E679535CE2 /* libPods-AwesomeCharacters.a */; };
+		B15B26A72755113E007F74F8 /* Style+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B26A62755113E007F74F8 /* Style+Extensions.swift */; };
+		B15B26A927552B6A007F74F8 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15B26A827552B6A007F74F8 /* UIImage+Extension.swift */; };
 		B168304C27528841006BF6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168304B27528841006BF6F2 /* AppDelegate.swift */; };
 		B168304E27528841006BF6F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168304D27528841006BF6F2 /* SceneDelegate.swift */; };
 		B168305527528843006BF6F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B168305427528843006BF6F2 /* Assets.xcassets */; };
@@ -67,6 +69,8 @@
 		3D897001F276B104A2BBE57C /* Pods-AwesomeCharacters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeCharacters.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeCharacters/Pods-AwesomeCharacters.debug.xcconfig"; sourceTree = "<group>"; };
 		73FF02964BCDE3E679535CE2 /* libPods-AwesomeCharacters.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeCharacters.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B0E6F24C3EBF443F56C0FE /* Pods-AwesomeCharacters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeCharacters.release.xcconfig"; path = "Target Support Files/Pods-AwesomeCharacters/Pods-AwesomeCharacters.release.xcconfig"; sourceTree = "<group>"; };
+		B15B26A62755113E007F74F8 /* Style+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Style+Extensions.swift"; sourceTree = "<group>"; };
+		B15B26A827552B6A007F74F8 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		B168304827528841006BF6F2 /* AwesomeCharacters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeCharacters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B168304B27528841006BF6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B168304D27528841006BF6F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -288,6 +292,7 @@
 				B168307927529080006BF6F2 /* fonts */,
 				B168306C27528BDE006BF6F2 /* generated */,
 				B168306F27528C87006BF6F2 /* Localizable.strings */,
+				B15B26A62755113E007F74F8 /* Style+Extensions.swift */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 				B168309F27529FFC006BF6F2 /* AppError.swift */,
 				B168309B27529C19006BF6F2 /* Constants.swift */,
 				B168309D27529FAA006BF6F2 /* Strings+Extensions.swift */,
+				B15B26A827552B6A007F74F8 /* UIImage+Extension.swift */,
 			);
 			path = others;
 			sourceTree = "<group>";
@@ -387,6 +393,8 @@
 			dependencies = (
 			);
 			name = AwesomeCharacters;
+			packageProductDependencies = (
+			);
 			productName = AwesomeCharacters;
 			productReference = B168304827528841006BF6F2 /* AwesomeCharacters.app */;
 			productType = "com.apple.product-type.application";
@@ -523,6 +531,7 @@
 				B168309A27529B39006BF6F2 /* CharactersRepository.swift in Sources */,
 				B16830A027529FFC006BF6F2 /* AppError.swift in Sources */,
 				B168307627528F82006BF6F2 /* Assets.generated.swift in Sources */,
+				B15B26A72755113E007F74F8 /* Style+Extensions.swift in Sources */,
 				B1BB85B02754105100987EFC /* DetailCharacterPresenter.swift in Sources */,
 				B168309027529193006BF6F2 /* ListCharacterViewController.swift in Sources */,
 				B16830782752905B006BF6F2 /* Strings.generated.swift in Sources */,
@@ -539,6 +548,7 @@
 				B16830A92752ACCB006BF6F2 /* APIRequest.swift in Sources */,
 				B16830A22752A434006BF6F2 /* ResponseDTO.swift in Sources */,
 				B16830AF2752B7F0006BF6F2 /* ListCharacterViewCell.swift in Sources */,
+				B15B26A927552B6A007F74F8 /* UIImage+Extension.swift in Sources */,
 				B1BB85DE2754138100987EFC /* DetailCharacterSeparatorCell.swift in Sources */,
 				B168307527528F82006BF6F2 /* Fonts.generated.swift in Sources */,
 				B1BB85D2275412A100987EFC /* DetailCharacterTitleCell.swift in Sources */,

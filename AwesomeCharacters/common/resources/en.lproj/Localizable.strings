@@ -17,10 +17,10 @@
 "error.timeOut" = "Ha ocurrido un error. Tiempo de espera agotado";
 "retry" = "Reintentar";
 "title.list" = "Listado";
-"title.comic" = "Apariciones en comics";
-"title.series" = "Apariciones en series";
-"title.stories" = "Apariciones en historias";
-"title.events" = "Apariciones en eventos";
+"title.comic" = "Apariciones en comics (%d)";
+"title.series" = "Apariciones en series (%d)";
+"title.stories" = "Apariciones en historias (%d)";
+"title.events" = "Apariciones en eventos (%d)";
 "title.links" = "Enlaces";
 "link.detail" = "Ir al detalle";
 "link.wiki" = "Ir a la wiki";

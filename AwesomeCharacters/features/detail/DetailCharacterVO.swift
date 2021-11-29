@@ -30,25 +30,25 @@ final class DetailCharacterVO {
         
         if itemBO.comicsTitle.count > 0 {
             rows.append(.separator)
-            rows.append(.header(L10n.Title.comic))
+            rows.append(.header(L10n.Title.comic(itemBO.comicsTitle.count)))
             rows.append(contentsOf: itemBO.comicsTitle.map({ .value($0) }))
         }
         
         if itemBO.seriesTitle.count > 0 {
             rows.append(.separator)
-            rows.append(.header(L10n.Title.series))
+            rows.append(.header(L10n.Title.series(itemBO.seriesTitle.count)))
             rows.append(contentsOf: itemBO.seriesTitle.map({ .value($0) }))
         }
         
         if itemBO.storiesTitle.count > 0 {
             rows.append(.separator)
-            rows.append(.header(L10n.Title.stories))
+            rows.append(.header(L10n.Title.stories(itemBO.storiesTitle.count)))
             rows.append(contentsOf: itemBO.storiesTitle.map({ .value($0) }))
         }
         
         if itemBO.eventsTitle.count > 0 {
             rows.append(.separator)
-            rows.append(.header(L10n.Title.events))
+            rows.append(.header(L10n.Title.events(itemBO.eventsTitle.count)))
             rows.append(contentsOf: itemBO.eventsTitle.map({ .value($0) }))
         }
         

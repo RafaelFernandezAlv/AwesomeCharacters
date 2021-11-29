@@ -19,7 +19,11 @@ class DetailCharacterSeparatorCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        viewSeparator.backgroundColor = .gray
+        loadUI()
+    }
+    
+    private func loadUI() {
+        viewSeparator.styleSeparator()
     }
 
     override var selectionStyle: UITableViewCell.SelectionStyle { get { .none } set { } }

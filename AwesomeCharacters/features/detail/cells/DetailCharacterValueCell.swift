@@ -19,12 +19,18 @@ class DetailCharacterValueCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        loadUI()
+    }
+    
+    private func loadUI() {
+        lbText.styleBlack()
+        lbText.styleRegularBody()
     }
 
     override var selectionStyle: UITableViewCell.SelectionStyle { get { .none } set { } }
     override func setSelected(_ selected: Bool, animated: Bool) { }
     
     func loadCell(text: String) {
-        lbText.text = text
+        lbText.text = " • \(text)"
     }
 }

@@ -20,6 +20,11 @@ class DetailCharacterLinkCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        loadUI()
+    }
+    
+    private func loadUI() {
+        btnLink.styleDefault()
     }
 
     override var selectionStyle: UITableViewCell.SelectionStyle { get { .none } set { } }

@@ -54,18 +54,26 @@ internal enum L10n {
   }
 
   internal enum Title {
-    /// Apariciones en comics
-    internal static let comic = L10n.tr("Localizable", "title.comic")
-    /// Apariciones en eventos
-    internal static let events = L10n.tr("Localizable", "title.events")
+    /// Apariciones en comics (%d)
+    internal static func comic(_ p1: Int) -> String {
+      return L10n.tr("Localizable", "title.comic", p1)
+    }
+    /// Apariciones en eventos (%d)
+    internal static func events(_ p1: Int) -> String {
+      return L10n.tr("Localizable", "title.events", p1)
+    }
     /// Enlaces
     internal static let links = L10n.tr("Localizable", "title.links")
     /// Listado
     internal static let list = L10n.tr("Localizable", "title.list")
-    /// Apariciones en series
-    internal static let series = L10n.tr("Localizable", "title.series")
-    /// Apariciones en historias
-    internal static let stories = L10n.tr("Localizable", "title.stories")
+    /// Apariciones en series (%d)
+    internal static func series(_ p1: Int) -> String {
+      return L10n.tr("Localizable", "title.series", p1)
+    }
+    /// Apariciones en historias (%d)
+    internal static func stories(_ p1: Int) -> String {
+      return L10n.tr("Localizable", "title.stories", p1)
+    }
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

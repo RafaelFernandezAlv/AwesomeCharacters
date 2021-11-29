@@ -22,6 +22,7 @@ protocol DetailCharacterPresenterActions {
     var item: DetailCharacterVO? { get }
     func viewDidLoad()
     func gotToWeb(url: URL)
+    func showImage(image: UIImage)
 }
 
 @MainActor
@@ -38,6 +39,7 @@ final class DetailCharacterPresenter {
 }
 
 
+@MainActor
 extension DetailCharacterPresenter: DetailCharacterPresenterActions {
     
     func viewDidLoad() {
@@ -50,5 +52,10 @@ extension DetailCharacterPresenter: DetailCharacterPresenterActions {
     func gotToWeb(url: URL) {
         let webView = SFSafariViewController(url: url)
         delegate.present(webView, animated: true, completion: nil)
+    }
+    
+    func showImage(image: UIImage) {
+//        let viewController = NYTPhotosViewController
+        
     }
 }

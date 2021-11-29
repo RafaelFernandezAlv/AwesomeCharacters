@@ -19,6 +19,12 @@ class DetailCharacterDescriptionCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        loadUI()
+    }
+    
+    private func loadUI() {
+        lbText.styleBlack()
+        lbText.styleItalicCaption()
     }
 
     override var selectionStyle: UITableViewCell.SelectionStyle { get { .none } set { } }

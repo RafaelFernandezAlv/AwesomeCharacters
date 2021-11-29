@@ -6,4 +6,5 @@ target :AwesomeCharacters do
     pod 'SwiftGen'
     pod 'Kingfisher'
     pod 'NVActivityIndicatorView'
+    pod 'AZImagePreview'
 end

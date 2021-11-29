@@ -6,8 +6,8 @@
 //
 
 import UIKit
+import AZImagePreview
 
-@MainActor
 final class DetailCharacterViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -82,7 +82,7 @@ extension DetailCharacterViewController: UITableViewDataSource {
             }
         case .image(let url):
             if let cell = tableView.dequeueReusableCell(withIdentifier: DetailCharacterImageCell.cellIdentifier) as? DetailCharacterImageCell {
-                cell.loadCell(url: url)
+                cell.loadCell(url: url, delegate: self)
                 return cell
             }
         case .separator:
@@ -109,5 +109,15 @@ extension DetailCharacterViewController: UITableViewDataSource {
         }
         
         return UITableViewCell()
+    }
+}
+
+extension DetailCharacterViewController: AZPreviewImageViewDelegate {
+    func previewImageViewInRespectTo(_ previewImageView: UIImageView) -> UIView? {
+        return view
+    }
+    
+    func previewImageView(_ previewImageView: UIImageView, requestImagePreviewWithPreseneter presenter: AZImagePresenterViewController) {
+        present(presenter, animated: false, completion: nil)
     }
 }

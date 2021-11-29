@@ -25,11 +25,15 @@ class ListCharacterViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        viewBottomBackground.backgroundColor = .black
-        viewBottomBackground.alpha = 0.7
-        
-        lbTitle.textColor = .white
-        lbDescription.textColor = .white
+        loadUI()
+    }
+    
+    private func loadUI() {
+        viewBottomBackground.styleTransparent()
+        lbTitle.styleWhite()
+        lbTitle.styleBoldBody()
+        lbDescription.styleWhite()
+        lbDescription.styleItalicCaption()
     }
     
     override func prepareForReuse() {
