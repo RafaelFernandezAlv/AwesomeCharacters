@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings (Spanish)
+  AwesomeCharacters
+
+  Created by rafael.fernandez on 27/11/21.
+  
+*/
+
+"empty" = "--";
+"noResults" = "Sin resultados. Inténtelo de nuevo con otros filtros.";
+"error.unknown" = "Ha ocurrido un error desconocido";
+"error.invalidURL" = "Ha ocurrido un error. La petición no es correcta";
+"error.invalidResponse" = "Ha ocurrido un error. La respuesta de la petición no es correcta";
+"error.invalidStatusCode" = "Ha ocurrido un error. La respuesta de la petición no es correcta: Status code %d";
+"error.noInternetConnection" = "Ha ocurrido un error. Comprube su conexión a internet";
+"error.timeOut" = "Ha ocurrido un error. Tiempo de espera agotado";
+"retry" = "Reintentar";
+"title.list" = "Listado";
+"title.comic" = "Apariciones en comics (%d)";
+"title.series" = "Apariciones en series (%d)";
+"title.stories" = "Apariciones en historias (%d)";
+"title.events" = "Apariciones en eventos (%d)";
+"title.links" = "Enlaces";
+"link.detail" = "Ir al detalle";
+"link.wiki" = "Ir a la wiki";
+"link.comic" = "Ir a los comics";
+"search.placeholder" = "Empieza por...";
+

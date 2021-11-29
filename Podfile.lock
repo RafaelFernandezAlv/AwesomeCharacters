@@ -1,0 +1,30 @@
+PODS:
+  - AZImagePreview (1.2.0)
+  - Kingfisher (7.1.1)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - SwiftGen (6.5.1)
+
+DEPENDENCIES:
+  - AZImagePreview
+  - Kingfisher
+  - NVActivityIndicatorView
+  - SwiftGen
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AZImagePreview
+    - Kingfisher
+    - NVActivityIndicatorView
+    - SwiftGen
+
+SPEC CHECKSUMS:
+  AZImagePreview: 85ed1e8550fb2d5ffe9955c9ebc49325153d0b02
+  Kingfisher: f738f9c4a3415823b8e2985d10aa2d6a9f37bc4d
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  SwiftGen: a6d22010845f08fe18fbdf3a07a8e380fd22e0ea
+
+PODFILE CHECKSUM: 0a05a2a990e207eaafa088051138ba7400aca1e0
+
+COCOAPODS: 1.11.2

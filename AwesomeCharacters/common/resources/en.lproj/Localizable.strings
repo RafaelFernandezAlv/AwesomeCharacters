@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings (English)
+  AwesomeCharacters
+
+  Created by rafael.fernandez on 27/11/21.
+  
+*/
+
+"empty" = "--";
+"noResults" = "No results. Try again with other filters.";
+"error.unknown" = "An unknown error has occurred";
+"error.invalidURL" = "An unknown error has occurred. The request is not correct";
+"error.invalidResponse" = "An unknown error has occurred. The response to the request is not correct";
+"error.invalidStatusCode" = "An error has occurred. The request response is not correct: Status code %d";
+"error.noInternetConnection" = "An error has occurred. Check your internet connection";
+"error.timeOut" = "An error has occurred. Timeout has expired";
+"retry" = "Retry";
+"title.list" = "List";
+"title.comic" = "Comic book appearances (%d)";
+"title.series" = "Series appearances (%d)";
+"title.stories" = "Stories appearances (%d)";
+"title.events" = "Events appearances (%d)";
+"title.links" = "Links";
+"link.detail" = "Go to detail";
+"link.wiki" = "Go to wiki";
+"link.comic" = "Go to comics";
+"search.placeholder" = "Starts with...";
