@@ -48,11 +48,6 @@ internal enum L10n {
     internal static let placeholder = L10n.tr("Localizable", "search.placeholder")
   }
 
-  internal enum Test {
-    /// value
-    internal static let key = L10n.tr("Localizable", "test.key")
-  }
-
   internal enum Title {
     /// Apariciones en comics (%d)
     internal static func comic(_ p1: Int) -> String {

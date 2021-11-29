@@ -6,7 +6,6 @@
   
 */
 
-"test.key" = "value";
 "empty" = "--";
 "noResults" = "Sin resultados. Inténtelo de nuevo con otros filtros.";
 "error.unknown" = "Ha ocurrido un error desconocido";

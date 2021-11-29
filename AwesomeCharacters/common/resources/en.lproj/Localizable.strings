@@ -6,23 +6,22 @@
   
 */
 
-"test.key" = "value";
 "empty" = "--";
-"noResults" = "Sin resultados. Inténtelo de nuevo con otros filtros.";
-"error.unknown" = "Ha ocurrido un error desconocido";
-"error.invalidURL" = "Ha ocurrido un error. La petición no es correcta";
-"error.invalidResponse" = "Ha ocurrido un error. La respuesta de la petición no es correcta";
-"error.invalidStatusCode" = "Ha ocurrido un error. La respuesta de la petición no es correcta: Status code %d";
-"error.noInternetConnection" = "Ha ocurrido un error. Comprube su conexión a internet";
-"error.timeOut" = "Ha ocurrido un error. Tiempo de espera agotado";
-"retry" = "Reintentar";
-"title.list" = "Listado";
-"title.comic" = "Apariciones en comics (%d)";
-"title.series" = "Apariciones en series (%d)";
-"title.stories" = "Apariciones en historias (%d)";
-"title.events" = "Apariciones en eventos (%d)";
-"title.links" = "Enlaces";
-"link.detail" = "Ir al detalle";
-"link.wiki" = "Ir a la wiki";
-"link.comic" = "Ir a los comics";
-"search.placeholder" = "Empieza por...";
+"noResults" = "No results. Try again with other filters.";
+"error.unknown" = "An unknown error has occurred";
+"error.invalidURL" = "An unknown error has occurred. The request is not correct";
+"error.invalidResponse" = "An unknown error has occurred. The response to the request is not correct";
+"error.invalidStatusCode" = "An error has occurred. The request response is not correct: Status code %d";
+"error.noInternetConnection" = "An error has occurred. Check your internet connection";
+"error.timeOut" = "An error has occurred. Timeout has expired";
+"retry" = "Retry";
+"title.list" = "List";
+"title.comic" = "Comic book appearances (%d)";
+"title.series" = "Series appearances (%d)";
+"title.stories" = "Stories appearances (%d)";
+"title.events" = "Events appearances (%d)";
+"title.links" = "Links";
+"link.detail" = "Go to detail";
+"link.wiki" = "Go to wiki";
+"link.comic" = "Go to comics";
+"search.placeholder" = "Starts with...";
