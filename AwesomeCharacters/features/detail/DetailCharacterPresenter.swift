@@ -45,7 +45,7 @@ extension DetailCharacterPresenter: DetailCharacterPresenterActions {
     func viewDidLoad() {
         delegate.registerCells()
         delegate.loadUI(title: itemBO.name)
-        item = DetailCharacterVO(item: itemBO)
+        item = DetailCharacterVO(item: itemBO) //No need API call. We have all data in CharacterBO obtained in the list
         delegate.itemLoaded()
     }
     
