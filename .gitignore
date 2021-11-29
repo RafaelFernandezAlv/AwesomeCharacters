@@ -2,6 +2,11 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+
+Strings.generated.swift
+Fonts.generated.swift
+Assets.generated.swift
+
 ### Xcode ###
 build
 *.xcodeproj/*
